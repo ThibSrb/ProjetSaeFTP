@@ -651,21 +651,27 @@ if ($reqType == "addDir") {
 
     $delName = $_POST['delName'];
     $delPath = $root.$explore.$delName;
-    print($delPath);
 
-    if (file_exists($delPath)){
+    if ($delPath != $root."\\ftp.php") {
+      if (file_exists($delPath)){
 
-      if (!is_dir($delPath)) {
-        unlink($delPath);
+        if (!is_dir($delPath)) {
+          unlink($delPath);
+        }
+        else {
+          deleteDirectory($delPath);
+        }
+
+        print("1");
       }
-      else {
-        deleteDirectory($delPath);
+      else{
+        print("File does not exists");
       }
+    }
+    else {
+      print("You don't have the permmission to delete that file");
+    }
 
-    }
-    else{
-      print("File does not exists");
-    }
 
   }
 
