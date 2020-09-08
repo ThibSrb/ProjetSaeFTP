@@ -1,6 +1,6 @@
 <?php
 //A DEFINIR PAR L'ADMIN DU FTP
-  $root = "..\www";
+  $root = "../www";
   $user = "admin";
   $pass = "pepere";
 //A DEFINIR PAR L'ADMIN DU FTP
@@ -32,10 +32,10 @@
   }
 
   //$root = getcwd();
-  $explore = "\\";
+  $explore = "/";
   //print($root);
   if (!empty($_GET['dir'])) {
-    $explore = $_GET['dir']."\\";
+    $explore = $_GET['dir']."/";
   }
   //print($explore);
 
@@ -384,11 +384,11 @@ $notSorted = true;
       <div class="currentPath">
         <a href="?dir=" class="pathLi"><p>root</p></a>
         <?php
-        $explodedExplore = explode('\\',$explore);
+        $explodedExplore = explode('/',$explore);
         $tampDir = "?dir=";
         for ($r=0; $r < count($explodedExplore) - 1; $r++) {
           if ($explodedExplore[$r] != "") {
-            $tampDir .="\\".$explodedExplore[$r];
+            $tampDir .="/".$explodedExplore[$r];
             print('/<a href="'.$tampDir.'" class="pathLi"><p>'.$explodedExplore[$r].'</p></a>');
           }
         }
@@ -429,7 +429,7 @@ $notSorted = true;
                 <img src="../data/images/dossier.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
                 <p>'.$tf.'</p>
               </a>
-              <button type="button" onclick="del(\''.str_replace('\\','\\\\',$tf).'\')">Delete</button>
+              <button type="button" onclick="del(\''.str_replace('/','//',$tf).'\')">Delete</button>
             </div>');
           }
           else {
@@ -444,13 +444,13 @@ $notSorted = true;
               $type = "fichier";
             }
 
-            if (!($tf == "ftp.php" && $explore == "\\")) {
+            if (!($tf == "ftp.php" && $explore == "/")) {
               print('<div class="file">
                 <a class="inFile" href="'.$root.$explore.$tf.'">
                   <img src="../data/images/'.$type.'.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
                   <p>'.$tf.'</p>
                 </a>
-                <button type="button" onclick="del(\''.str_replace('\\','\\\\',$tf).'\')">Delete</button>
+                <button type="button" onclick="del(\''.str_replace('/','//',$tf).'\')">Delete</button>
               </div>');
             }
 
@@ -815,17 +815,17 @@ if ($reqType == "addDir") {
 
   $dirName = $_POST['dirName'];
 
-  $forbidden = array("/", "\\", "<", ">", "?", "*", ":", "|", '"', " ", ".","$");
+  $forbidden = array("/", "/", "<", ">", "?", "*", ":", "|", '"', " ", ".","$");
 
   if (str_replace($forbidden,"",$dirName) == "" || str_replace($forbidden,"",$dirName) != $dirName) {
     print("Invalid directory name");
   }
-  else if (is_dir($currentDir.'\\'.$dirName)) {
+  else if (is_dir($currentDir.'/'.$dirName)) {
     print("This directory already exists");
     //print($currentDir.$dirName);
   }
   else {
-    mkdir($currentDir.'\\'.$dirName);
+    mkdir($currentDir.'/'.$dirName);
     print("1");
   }
 }
@@ -860,7 +860,7 @@ if ($reqType == "addDir") {
     $delName = $_POST['delName'];
     $delPath = $root.$explore.$delName;
 
-    if ($delPath != $root."\\ftp.php") {
+    if ($delPath != $root."/ftp.php") {
       if (file_exists($delPath)){
 
         if (!is_dir($delPath)) {
