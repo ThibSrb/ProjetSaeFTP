@@ -5,6 +5,675 @@
   $pass = "pepere";
 //A DEFINIR PAR L'ADMIN DU FTP
 
+
+$SVGfichier = '<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="fichier.svg">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect921"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,11.898422,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="10"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect902"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,11.898422,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="10"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       hide_knots="false"
+       only_selected="false"
+       apply_with_radius="true"
+       apply_no_radius="true"
+       use_knot_distance="true"
+       flexible="false"
+       chamfer_steps="1"
+       radius="10"
+       mode="F"
+       method="auto"
+       unit="px"
+       satellites_param="F,0,0,1,0,11.898422,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect883"
+       effect="fillet_chamfer" />
+    <inkscape:path-effect
+       hide_knots="false"
+       only_selected="false"
+       apply_with_radius="true"
+       apply_no_radius="true"
+       use_knot_distance="true"
+       flexible="false"
+       chamfer_steps="1"
+       radius="0"
+       mode="F"
+       method="auto"
+       unit="px"
+       satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,10,0,1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect838"
+       effect="fillet_chamfer" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect887"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="IC,0,0,1,0,0,0,1 @ IC,0,0,1,0,40,0,1 @ IC,0,0,1,0,0,0,1 @ IC,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="IC"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect877"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="IC,0,0,1,0,0,0,1 @ IC,0,0,1,0,39.797089,0,1 @ IC,0,0,1,0,0.019569773,0,1 @ IC,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="IC"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect851"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="70"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect845"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,10,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,10,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="true"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect843"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="IC,0,0,1,0,0,0,1 @ IC,0,0,1,0,40,0,1 @ IC,0,0,1,0,0,0,1 @ IC,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="IC"
+       radius="70"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect841"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="IF,0,0,1,0,0,0,1 @ IF,0,0,1,0,0,0,1 @ IF,0,0,1,0,0,0,1 @ IF,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="50"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.42250001"
+     inkscape:cx="-359.46807"
+     inkscape:cy="488.70735"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(1.4841804,0,0,1.4841804,-64.053032,-64.053028)"
+       id="g928">
+      <g
+         id="g854"
+         transform="translate(-11.52828)">
+        <path
+           inkscape:path-effect="#path-effect843;#path-effect845"
+           d="m 91.264885,49.514877 h 75.110125 l 40,40 V 205.06845 a 10,10 135 0 1 -10,10 H 91.264885 a 10,10 45 0 1 -10,-10 V 59.514877 a 10,10 135 0 1 10,-10 z"
+           style="fill:#ff8aff;fill-opacity:1;stroke-width:0.264583"
+           id="rect833"
+           width="125.11012"
+           height="165.55357"
+           x="81.264885"
+           y="49.514877"
+           sodipodi:type="rect" />
+        <path
+           inkscape:path-effect="#path-effect887;#path-effect838"
+           style="fill:#c46ac4;fill-opacity:1;stroke-width:0.252493"
+           id="rect885"
+           width="40"
+           height="40"
+           x="166.375"
+           y="49.514877"
+           d="m 166.375,49.514877 40,40 h -30 a 10,10 45 0 1 -10,-10 z"
+           sodipodi:type="rect" />
+      </g>
+      <path
+         style="fill:#c46ac4;fill-opacity:1;stroke-width:0.264583"
+         id="rect858"
+         width="77.523804"
+         height="20.136099"
+         x="93.529762"
+         y="117.03185"
+         inkscape:path-effect="#path-effect883"
+         d="m 105.42818,117.03185 h 55.62539 a 10,10 45 0 1 10,10 v 0.1361 a 10,10 135 0 1 -10,10 h -57.52381 a 10,10 45 0 1 -9.999998,-10 11.052442,11.052442 139.57279 0 1 11.898418,-10.1361 z"
+         sodipodi:type="rect" />
+      <path
+         sodipodi:type="rect"
+         inkscape:path-effect="#path-effect921"
+         y="154.64876"
+         x="93.529762"
+         height="20.136099"
+         width="77.523804"
+         id="rect858-1"
+         style="fill:#c46ac4;fill-opacity:1;stroke-width:0.264583"
+         d="m 105.42818,154.64876 h 55.62539 a 10,10 45 0 1 10,10 v 0.1361 a 10,10 135 0 1 -10,10 h -57.52381 a 10,10 45 0 1 -9.999998,-10 11.052442,11.052442 139.57279 0 1 11.898418,-10.1361 z" />
+    </g>
+  </g>
+</svg>';
+$SVGdossier = '<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2267.7166"
+   height="2267.7166"
+   viewBox="0 0 600 600"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="dossier.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="-1720.9559"
+     inkscape:cy="1592.4602"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g853"
+       transform="matrix(16.218009,0,0,16.104366,-2065.0023,-601.178)">
+      <path
+         style="fill:#ff8aff;stroke-width:0.264583;fill-opacity:1"
+         d="m 129.4285,69.413034 c -0.43117,-0.251132 -0.46302,-1.176602 -0.46302,-13.453307 0,-10.874272 0.0638,-13.236601 0.36443,-13.486069 0.25406,-0.210857 2.03578,-0.28076 5.88358,-0.230834 l 5.51916,0.07161 1.4227,1.918229 1.42269,1.918229 h 7.46938 c 8.87872,0 8.34514,-0.1983 8.34514,3.10138 0,2.397524 0.0464,2.454869 1.98819,2.454869 0.87261,0 1.18743,0.11429 1.30107,0.472337 0.18112,0.570672 -5.74396,16.970668 -6.24634,17.289184 -0.51828,0.328602 -26.43896,0.275206 -27.00698,-0.05563 z"
+         id="path857" />
+      <path
+         style="fill:#c46ac4;stroke-width:0.264583;fill-opacity:1"
+         d="m 128.98637,55.631388 c -0.0115,-6.791197 0.0398,-12.506197 0.11396,-12.7 0.1087,-0.284064 1.23527,-0.326724 5.81178,-0.220077 l 5.67695,0.132292 1.23821,1.719792 c 0.68102,0.945885 1.29014,1.779323 1.35359,1.852083 0.0635,0.07276 3.58821,0.191823 7.8328,0.264583 l 7.71744,0.132292 v 2.248958 2.248958 l -11.67768,0.06888 c -9.08183,0.05357 -11.74,0.143964 -11.95802,0.406666 -0.15419,0.185785 -1.52164,3.726665 -3.03878,7.868624 -1.51715,4.141958 -2.8239,7.709426 -2.90391,7.927708 -0.08,0.218281 -0.15485,-5.159559 -0.16634,-11.950756 z"
+         id="path855" />
+    </g>
+  </g>
+</svg>';
+$SVGimage = '<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="image.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 1000 1000"
+   height="1000mm"
+   width="1000mm">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       hide_knots="false"
+       only_selected="false"
+       apply_with_radius="true"
+       apply_no_radius="true"
+       use_knot_distance="true"
+       flexible="false"
+       chamfer_steps="1"
+       radius="10"
+       mode="F"
+       method="auto"
+       unit="pc"
+       satellites_param="F,0,0,1,0,42.333333,0,1 @ F,0,0,1,0,42.333333,0,1 @ F,0,0,1,0,42.333333,0,1 @ F,0,0,1,0,42.333333,0,1"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect835"
+       effect="fillet_chamfer" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="3471.2494"
+     inkscape:cx="-1594.5755"
+     inkscape:zoom="0.08"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <g
+       transform="translate(1.1444092e-5)"
+       id="g919">
+      <circle
+         style="fill:#ff8aff;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path858"
+         cx="807.17505"
+         cy="325.15344"
+         r="86.746277" />
+      <path
+         id="path841-2"
+         style="fill:#ff8aff;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:transform-center-x="3.8441693e-06"
+         inkscape:transform-center-y="-58.611931"
+         d="M 2608.9473,1676.8887 1706.25,2802.3262 v 286.8476 h 1896.957 v -172.6933 z"
+         transform="scale(0.26458333)" />
+      <path
+         id="path841"
+         style="fill:#ff8aff;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:transform-center-x="3.1883257e-05"
+         inkscape:transform-center-y="-73.42402"
+         d="M 285.19225,350.95894 42.167967,612.24117 V 817.72785 H 589.76526 V 678.41388 Z" />
+      <path
+         d="M 88.984841,182.65604 H 911.01514 a 42.333333,42.333333 45 0 1 42.33333,42.33333 l 0,550.02126 a 42.333333,42.333333 135 0 1 -42.33333,42.33333 H 88.984841 A 42.333333,42.333333 45 0 1 46.651508,775.01063 V 224.98937 a 42.333333,42.333333 135 0 1 42.333333,-42.33333 z"
+         style="fill:none;fill-opacity:1;stroke:#c46ac4;stroke-width:57.5375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect833"
+         width="906.69696"
+         height="634.68793"
+         x="46.651508"
+         y="182.65604"
+         sodipodi:type="rect"
+         inkscape:path-effect="#path-effect835" />
+    </g>
+  </g>
+</svg>
+';
+$SVGupload = '<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="upload.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 264.58333 264.58334"
+   height="1000"
+   width="1000">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="787.51367"
+     inkscape:cx="616.54174"
+     inkscape:zoom="0.5"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <g
+       transform="matrix(1.0851319,0,0,1.0851319,-11.262246,-17.695597)"
+       style="fill:#000000"
+       id="g919">
+      <rect
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="rect900"
+         width="50.985088"
+         height="74.426498"
+         x="106.79913"
+         y="124.31367" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="path902"
+         sodipodi:sides="3"
+         sodipodi:cx="132.29167"
+         sodipodi:cy="96.399963"
+         sodipodi:r1="56.999512"
+         sodipodi:r2="28.499758"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.52359878"
+         inkscape:flatsided="true"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         inkscape:transform-center-y="-14.249885"
+         inkscape:transform-center-x="2.075927e-06"
+         d="m 132.29167,39.400452 49.36303,85.499268 -98.726054,0 z" />
+    </g>
+    <g
+       style="fill:#000000"
+       transform="matrix(1.0851319,0,0,1.0851319,-10.950463,-17.695597)"
+       id="g915">
+      <rect
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="rect883"
+         width="26.579247"
+         height="89.077408"
+         x="210.91148"
+         y="147.96275" />
+      <rect
+         y="147.96275"
+         x="26.517967"
+         height="89.077408"
+         width="26.579247"
+         id="rect883-6"
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0" />
+      <rect
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="rect908"
+         width="210.97275"
+         height="26.579247"
+         x="26.517967"
+         y="210.46091" />
+    </g>
+  </g>
+</svg>';
+$SVGdownload = '<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="download.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 264.58333 264.58334"
+   height="1000"
+   width="1000">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="899.14988"
+     inkscape:cx="741.03021"
+     inkscape:zoom="0.35355339"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <g
+       transform="matrix(1.0851319,0,0,-1.0851319,-11.262246,240.71838)"
+       style="fill:#000000"
+       id="g919">
+      <rect
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="rect900"
+         width="50.985088"
+         height="74.426498"
+         x="106.79913"
+         y="124.31367" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="path902"
+         sodipodi:sides="3"
+         sodipodi:cx="132.29167"
+         sodipodi:cy="96.399963"
+         sodipodi:r1="56.999512"
+         sodipodi:r2="28.499758"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:arg2="-0.52359878"
+         inkscape:flatsided="true"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         inkscape:transform-center-y="-14.249885"
+         inkscape:transform-center-x="2.075927e-06"
+         d="m 132.29167,39.400452 49.36303,85.499268 -98.726054,0 z" />
+    </g>
+    <g
+       style="fill:#000000"
+       transform="matrix(1.0851319,0,0,1.0851319,-10.950463,-17.695597)"
+       id="g915">
+      <rect
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="rect883"
+         width="26.579247"
+         height="89.077408"
+         x="210.91148"
+         y="147.96275" />
+      <rect
+         y="147.96275"
+         x="26.517967"
+         height="89.077408"
+         width="26.579247"
+         id="rect883-6"
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0" />
+      <rect
+         style="fill:#000000;stroke:#c46ac4;stroke-width:0"
+         id="rect908"
+         width="210.97275"
+         height="26.579247"
+         x="26.517967"
+         y="210.46091" />
+    </g>
+  </g>
+</svg>';
+
   session_start();
   //session_destroy();
   ob_start();
@@ -353,6 +1022,21 @@ $notSorted = true;
     color:red;
   }
 
+  .ftpIcon {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .ftpIcon svg{
+    height: 35px;
+    width: 35px;
+  }
+
+  .uploadIcon svg {
+    height: 20px;
+    width:20px;
+  }
+
   @media only screen and (max-width: 600px) {
     .AddThings {
       width: 100%;
@@ -401,7 +1085,7 @@ $notSorted = true;
       <div class="AddThings">
         <div class="addToCurrent">
           <input id="addToCurrentFileInput" class="fileInput" type="file" multiple name="" value="" onchange="processAddingFiles(this.files)">
-          <label for="addToCurrentFileInput" class="fileButton"><img src="../data/images/upload.svg" height="20px" alt="">&nbsp;&nbsp;Select or Drag files</label>
+          <label for="addToCurrentFileInput" class="fileButton"><div class="uploadIcon"><?php print($SVGupload) ?></div>&nbsp;&nbsp;Select or Drag files</label>
         </div>
         <div class="createDir">
           <div class="">
@@ -426,7 +1110,7 @@ $notSorted = true;
           if (is_dir($currentDir.$tf)) {
             print('<div class="dir">
               <a class="inDir" href="?dir='.$explore.$tf.'">
-                <img src="../data/images/dossier.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
+                <div class="ftpIcon" style="margin-top:2px;margin-left:20px;margin-right:15px;">'.$SVGdossier.'</div>
                 <p>'.$tf.'</p>
               </a>
               <button type="button" onclick="del(\''.str_replace('/','//',$tf).'\')">Delete</button>
@@ -438,16 +1122,16 @@ $notSorted = true;
             $fileExt = $splitedFileName[count($splitedFileName) - 1];
 
             if ($fileExt == "jpg" || $fileExt == "jpeg" || $fileExt == "png" || $fileExt == "svg" || $fileExt == "gif") {
-              $type = "image";
+              $type = $SVGimage;
             }
             else {
-              $type = "fichier";
+              $type = $SVGfichier;
             }
 
             if (!($tf == "ftp.php" && $explore == "/")) {
               print('<div class="file">
                 <a class="inFile" href="'.$root.$explore.$tf.'">
-                  <img src="../data/images/'.$type.'.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
+                  <div class="ftpIcon" style="margin-top:2px;margin-left:20px;margin-right:15px;">'.$type.'</div>
                   <p>'.$tf.'</p>
                 </a>
                 <button type="button" onclick="del(\''.str_replace('/','//',$tf).'\')">Delete</button>
