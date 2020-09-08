@@ -179,7 +179,7 @@ $notSorted = true;
 
   .AddThings {
     width:15%;
-    height: 15vw;
+    height: auto;
     display: inline-block;
 
   }
@@ -214,35 +214,60 @@ $notSorted = true;
     background-color: #efefef;
   }
 
-  .dir{
-    width: 100%;
-    box-sizing: border-box;
-    border : 0px solid white;
-    border-bottom: 2px solid #dedede;
-    height:70px;
-    overflow: hidden;
-    background-color: white;
-    display: block;
-    padding: 0px;
-    color:black;
-  }
+/*DIR*/
+.dir{
+  width: 100%;
+  box-sizing: border-box;
+  border : 0px solid white;
+  border-bottom: 2px solid #dedede;
+  height:70px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  transition: .3s;
+}
 
-  .inDir {
-    width:100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: white;
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-flex;
-    align-items: center;
-    transition: .3s;
-  }
+.dir button {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color:#c46ac4;
+  text-decoration: underline;
+  font-size: 100%;
+  display: inline-block;
+  border: 0px;
+  background-color: #fff0;
+  border-radius: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+.dir button:hover {
+  color: #804580;
+  cursor: pointer;
+}
 
-  .inDir:hover {
-    background-color: #efefef77;
-  }
+.inDir {
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color:black;
+}
 
+.dir:hover {
+  background-color: #efefef77;
+}
+/*DIR*/
+
+
+
+/*FILE*/
   .file{
     width: 100%;
     box-sizing: border-box;
@@ -251,25 +276,49 @@ $notSorted = true;
     height:70px;
     overflow: hidden;
     background-color: white;
-    display: block;
+    display: flex;
     padding: 0px;
+    align-items: center;
+    transition: .3s;
+  }
+
+  .file button {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:#c46ac4;
+    text-decoration: underline;
+    font-size: 100%;
+    display: inline-block;
+    border: 0px;
+    background-color: #fff0;
+    border-radius: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    transition: .3s;
+  }
+  .file button:hover {
+    color: #804580;
+    cursor: pointer;
   }
 
   .inFile {
     width:100%;
     height: 100%;
     overflow: hidden;
-    background-color: white;
     box-sizing: border-box;
     text-align: left;
     display: inline-flex;
     align-items: center;
-    transition: .3s;
+    text-decoration: none;
+    color:black;
   }
 
-  .inFile:hover {
+  .file:hover {
     background-color: #efefef77;
   }
+/*FILE*/
+
+
 
   .zoneHighlight > * {
     background-color: #ffdbff !important;
@@ -326,18 +375,18 @@ $notSorted = true;
         </button>-->
 
         <?php
-
         $i = 2;
         while ($i < count($allDir)) {
           $tf = $allDir[$i];
 
           if (is_dir($currentDir.$tf)) {
-            print('<a class="dir" href="?dir='.$explore.$tf.'">
-              <div class="inDir">
+            print('<div class="dir">
+              <a class="inDir" href="?dir='.$explore.$tf.'">
                 <img src="../data/images/dossier.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
                 <p>'.$tf.'</p>
-              </div>
-            </a>');
+              </a>
+              <button type="button" onclick="del(\''.str_replace('\\','\\\\',$tf).'\')">Delete</button>
+            </div>');
           }
           else {
 
@@ -352,12 +401,13 @@ $notSorted = true;
             }
 
             if ($tf !=  "ftp.php") {
-              print('<a class="file" href="'.$root.$explore.$tf.'">
-                <div class="inFile">
+              print('<div class="file">
+                <a class="inFile" href="'.$root.$explore.$tf.'">
                   <img src="../data/images/'.$type.'.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
                   <p>'.$tf.'</p>
-                </div>
-              </a>');
+                </a>
+                <button type="button" onclick="del(\''.str_replace('\\','\\\\',$tf).'\')">Delete</button>
+              </div>');
             }
 
           }
@@ -462,7 +512,7 @@ $notSorted = true;
       var url = window.location
       var xhr = new XMLHttpRequest()
       var formData = new FormData()
-      var xhr = new XMLHttpRequest();
+
       xhr.open("POST", url, true);
 
       //Envoie les informations du header adaptées avec la requête
@@ -487,6 +537,38 @@ $notSorted = true;
 
 
 
+    function del(path){
+
+      var url = window.location
+      var xhr = new XMLHttpRequest()
+      var formData = new FormData()
+
+      xhr.open("POST", url, true);
+
+      //Envoie les informations du header adaptées avec la requête
+      //xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+      xhr.onreadystatechange = function() { //Appelle une fonction au changement d'état.
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+          if (this.responseText == "1") {
+            document.location.reload(true)
+          }
+          else{
+            console.log(this.responseText)
+          }
+        }
+      }
+
+      formData.append('delName',path)
+      formData.append('xhrReq',"delete")
+
+      xhr.send(formData);
+
+
+    }
+
+
+
 
     </script>
 
@@ -502,6 +584,8 @@ $notSorted = true;
   ob_end_clean();
   //print_r($_POST);
   //print_r($_FILES);
+
+  //ADD FILE
 if ($reqType == "addFile") {
   $file = $_FILES['file']['tmp_name'];
   $filename = $_FILES['file']['name'];
@@ -517,6 +601,8 @@ if ($reqType == "addFile") {
   }
 }
 
+
+//ADD DIR
 if ($reqType == "addDir") {
 
   $dirName = $_POST['dirName'];
@@ -536,6 +622,52 @@ if ($reqType == "addDir") {
   }
 }
 
+
+//DELETE
+
+  if ($reqType == "delete") {
+
+    function deleteDirectory($direct) {
+      if (!file_exists($direct)) {
+        return true;
+        }
+
+        if (!is_dir($direct)) {
+          return unlink($direct);
+        }
+
+        foreach (scandir($direct) as $item) {
+          if ($item == '.' || $item == '..') {
+              continue;
+            }
+
+            if (!deleteDirectory($direct . DIRECTORY_SEPARATOR . $item)) {
+              return false;
+            }
+          }
+
+      return rmdir($direct);
+    }
+
+    $delName = $_POST['delName'];
+    $delPath = $root.$explore.$delName;
+    print($delPath);
+
+    if (file_exists($delPath)){
+
+      if (!is_dir($delPath)) {
+        unlink($delPath);
+      }
+      else {
+        deleteDirectory($delPath);
+      }
+
+    }
+    else{
+      print("File does not exists");
+    }
+
+  }
 
 }
 ?>
