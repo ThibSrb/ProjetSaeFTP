@@ -5,7 +5,23 @@
   $pass = "pepere";
 //A DEFINIR PAR L'ADMIN DU FTP
 
-$linkRoot = $_SERVER['PHP_SELF'];
+$phpSelf = $_SERVER['PHP_SELF'];
+
+$explodedPhpSelf = explode('/',$phpSelf);
+
+$pageName = $explodedPhpSelf[count($explodedPhpSelf) - 1];
+
+$phpHostName = $_SERVER['SERVER_NAME'];
+
+if ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] == 443) {
+  $prot = "https://";
+}
+else {
+  $prot = "http://";
+}
+
+
+$linkRoot = $prot.$phpHostName.str_replace('/'.$pageName,'',$phpSelf);
 
 //print($linkRoot);
 
@@ -1133,7 +1149,7 @@ $notSorted = true;
 
             if (!($tf == "ftp.php" && $explore == "/")) {
               print('<div class="file">
-                <a class="inFile" href="'.$root.$explore.$tf.'">
+                <a class="inFile" href="'.$linkRoot.$explore.$tf.'">
                   <div class="ftpIcon" style="margin-top:2px;margin-left:20px;margin-right:15px;">'.$type.'</div>
                   <p>'.$tf.'</p>
                 </a>
