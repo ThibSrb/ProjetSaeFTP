@@ -5,6 +5,9 @@
   $pass = "pepere";
 //A DEFINIR PAR L'ADMIN DU FTP
 
+$linkRoot = $_SERVER['PHP_SELF'];
+
+//print($linkRoot);
 
 $SVGfichier = '<svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
