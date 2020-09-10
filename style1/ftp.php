@@ -703,13 +703,13 @@ $SVGdownload = '<svg
 
   if (!empty($_POST['username']) && !empty($_POST['password'])) {
     if ($_POST['username'] == $user && $_POST['password'] == $pass) {
-      $_SESSION['GHBLKJIMPQRTS'] = "YouAreLogged";
+      $_SESSION['logged'] = "YouAreLogged";
       print('<script> window.location.href = window.location.href </script>');
     }
   }
 
-  if (!empty($_SESSION['GHBLKJIMPQRTS'])) {
-    $logged = $_SESSION['GHBLKJIMPQRTS'];
+  if (!empty($_SESSION['logged'])) {
+    $logged = $_SESSION['logged'];
   }
 
   $notFound = false;

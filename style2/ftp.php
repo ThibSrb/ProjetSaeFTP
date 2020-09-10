@@ -814,7 +814,7 @@ $notSorted = true;
 
   .currentRepo {
     height:calc(100% - 150px);
-    width: calc(100% - 348px);
+    width: calc(100% - 310px);
     margin: 20px;
     background-color: #fff;
     display: inline-block;
@@ -827,7 +827,7 @@ $notSorted = true;
   }
 
   .addToCurrent {
-    width:288px;
+    width:100%;
     min-height: 40px;
     height: calc(100vh - 330px);
     display: inline-block;
@@ -883,10 +883,10 @@ $notSorted = true;
   }
 
   .AddThings {
-    width:288px;
+    width:250px;
     height:100%;
     display: inline-block;
-    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .addToCurrent .fileInput {
@@ -905,6 +905,7 @@ $notSorted = true;
     align-items: center;
     justify-content: center;
     transition: .3s;
+    box-sizing: border-box;
   }
 
   .addToCurrent .fileButton:hover{
@@ -1061,23 +1062,36 @@ $notSorted = true;
     .AddThings {
       width: 100%;
       display: flex;
-      height:200px;
+      height:150px;
+      margin: 20px;
+      margin-top: 0px;
     }
 
     .addToCurrent {
       height: calc(100% - 40px);
-      width: 30%;
+      width: calc(50% - 30px);
+      margin-top: 0px;
       margin-right: 20px;
     }
     .currentRepo {
-      margin-top: 0px;
+      margin-top: 20px;
       width: calc(100% - 40px);
-      height:calc(100vh - 330px);
+      height:calc(100vh - 280px);
     }
     .createDir {
-      width : calc(70% - 60px);
+      width : calc(50% - 30px);
+      height: calc(100% - 40px);
       margin-right: 20px;
+      margin-top: 0px;
       box-sizing: border-box;
+    }
+
+    .createDir button {
+      height:25px;
+    }
+
+    .createDir input {
+      height:25px;
     }
   }
 
@@ -1100,21 +1114,7 @@ $notSorted = true;
          ?>
       </div>
       <br>
-
-
-      <div class="AddThings">
-        <div class="addToCurrent">
-          <input id="addToCurrentFileInput" class="fileInput" type="file" multiple name="" value="" onchange="processAddingFiles(this.files)">
-          <label for="addToCurrentFileInput" class="fileButton"><div class="uploadIcon"><?php print($SVGupload) ?></div>&nbsp;&nbsp;Select or Drag files</label>
-        </div>
-        <div class="createDir">
-          <div class="">
-            <input id="dirName" type="text" name="dirName" value="" placeholder="Directory name">
-            <small id="alert" class="createDirAlert"><!--Directory name is necessary--></small>
-            <button type="button" name="button" onclick="createDir()">Create directory</button>
-          </div>
-        </div>
-      </div><div class="currentRepo" method="post">
+      <div class="currentRepo" method="post">
         <!--<button class="dir" name="1">
           <div class="inDir">
             <img src="../data/images/dossier.svg" alt="" height="50%" style="margin-top:2px;margin-left:20px;margin-right:15px;">
@@ -1166,6 +1166,18 @@ $notSorted = true;
         }
 
          ?>
+      </div><div class="AddThings">
+        <div class="addToCurrent">
+          <input id="addToCurrentFileInput" class="fileInput" type="file" multiple name="" value="" onchange="processAddingFiles(this.files)">
+          <label for="addToCurrentFileInput" class="fileButton"><div class="uploadIcon"><?php print($SVGupload) ?></div>&nbsp;&nbsp;Select or Drag files</label>
+        </div>
+        <div class="createDir">
+          <div class="">
+            <input id="dirName" type="text" name="dirName" value="" placeholder="Directory name">
+            <small id="alert" class="createDirAlert"><!--Directory name is necessary--></small>
+            <button type="button" name="button" onclick="createDir()">Create directory</button>
+          </div>
+        </div>
       </div>
     </div>
 
