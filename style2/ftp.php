@@ -725,6 +725,7 @@ $SVGdownload = '<svg
   //print($root);
   if (!empty($_GET['dir'])) {
     $explore = $_GET['dir']."/";
+    $explore = str_replace("../",'/',$explore);
   }
   //print($explore);
 
@@ -744,7 +745,7 @@ $notSorted = true;
     $notSorted = false;
 
     for ($i=0; $i < count($allDir) - 1; $i++) {
-      if (!is_dir($allDir[$i]) && is_dir($allDir[$i+1])) {
+      if (!is_dir($currentDir.$allDir[$i]) && is_dir($currentDir.$allDir[$i+1])) {
         $temp = $allDir[$i];
         $allDir[$i] = $allDir[$i+1];
         $allDir[$i+1] = $temp;
@@ -1148,7 +1149,7 @@ $notSorted = true;
               $type = $SVGfichier;
             }
 
-            if (!($tf == "ftp.php" && $explore == "/")) {
+            if (!($tf == "ftp.php" && str_replace('/','',str_replace('.','',$explore)) == "")) {
               print('<div class="file">
                 <a class="inFile" href="'.$linkRoot.$explore.$tf.'">
                   <div class="ftpIcon" style="margin-top:2px;margin-left:20px;margin-right:15px;">'.$type.'</div>
