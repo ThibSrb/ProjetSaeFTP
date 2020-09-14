@@ -4,6 +4,16 @@
   $pass = "pepere";
 //A DEFINIR PAR L'ADMIN DU FTP
 
+
+
+
+
+
+
+
+
+
+
 $root = getcwd();
 
 $phpSelf = $_SERVER['PHP_SELF'];
@@ -725,7 +735,21 @@ $SVGdownload = '<svg
   //print($root);
   if (!empty($_GET['dir'])) {
     $explore = $_GET['dir']."/";
-    $explore = str_replace("../",'/',$explore);
+    $explore = str_replace('\\','/',$explore);
+
+    $explodedExplore2 = explode('/',$explore);
+
+    $explore = '/';
+    $o = 0;
+    while ($o < count($explodedExplore2) - 1) {
+
+      if (str_replace('.','',$explodedExplore2[$o]) != '') {
+        $explore .= $explodedExplore2[$o].'/';
+      }
+
+      $o += 1;
+    }
+    $_GET['dir'] = $explore;
   }
   //print($explore);
 
