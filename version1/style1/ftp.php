@@ -1111,7 +1111,7 @@ $notSorted = true;
   <body>
     <div class="main">
       <div class="currentPath">
-        <a href="?dir=" class="pathLi"><p>root</p></a>
+        <a href="?dir=/" class="pathLi"><p>root</p></a>
         <?php
         $explodedExplore = explode('/',$explore);
         $tampDir = "?dir=";
