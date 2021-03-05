@@ -1,7 +1,7 @@
 <?php
 //A DEFINIR PAR L'ADMIN DU FTP
   $user = "admin";
-  $pass = "pepere";
+  $pass = "MDP";
 //A DEFINIR PAR L'ADMIN DU FTP
 
 
